@@ -59,7 +59,7 @@ plot_pmodel_gpp <- function(
 
   # simulated data
   if(!is.null(calib_outputs)){
-    for(i in length(calib_outputs)){
+    for(i in 1:length(calib_outputs)){
       params <- init_parameters
       for(j in names(calib_outputs[[i]]$par)){
         params[[j]] <- calib_outputs[[i]]$par[j]
